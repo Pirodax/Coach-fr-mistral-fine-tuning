@@ -55,7 +55,7 @@ model, tokenizer = FastLanguageModel.from_pretrained(
 
 Pour une explication détaillée du projet — concepts **QLoRA**, choix techniques, métriques GPU, comparaison avant/après et analyse des limites — consulte la documentation :
 
-📄 **Voir la documentation complète (Word)**
+📄 **Voir la documentation complète (Pdf)**
 
 Elle couvre notamment :
 
