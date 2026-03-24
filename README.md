@@ -5,8 +5,6 @@ Voici une version propre en **Markdown** pour ton `README.md` :
 
 Fine-tuning QLoRA de **Mistral 7B** pour l’assistant coach IA de **Loodo**, spécialisé en **motivation** et **organisation personnelle** en français.
 
----
-
 ## Résultats
 
 | Version | Dataset | Loss | Temps GPU |
@@ -16,7 +14,6 @@ Fine-tuning QLoRA de **Mistral 7B** pour l’assistant coach IA de **Loodo**, sp
 
 **x3 données → loss divisée par 2, pour seulement 3 minutes de GPU supplémentaires.**
 
----
 
 ## Stack
 
@@ -25,7 +22,6 @@ Fine-tuning QLoRA de **Mistral 7B** pour l’assistant coach IA de **Loodo**, sp
 - **Framework** — Unsloth `2026.3.5` · TRL `SFTTrainer` · HuggingFace Transformers
 - **GPU** — Tesla T4 · 15.6 Go VRAM (Google Colab)
 
----
 
 ## Utilisation
 
@@ -38,14 +34,15 @@ model, tokenizer = FastLanguageModel.from_pretrained(
 )
 ````
 
----
 
 ## Contenu du repo
 
 ```text
-├── luna_fine_tuning.ipynb   # Notebook complet commenté
-├── loodo_dataset.jsonl      # Dataset V1 (51 exemples)
-├── loodo_dataset_150.jsonl  # Dataset V2 (150 exemples)
+├── qlora_fine_tuning.ipynb                        # Notebook complet commenté
+├── Coach-fr-mistral-fine-tuning-documentation.pdf
+├── dataset/
+│   ├── loodo_dataset.jsonl                        # Dataset V1 (51 exemples)
+│   └── loodo_dataset_150.jsonl                    # Dataset V2 (150 exemples)
 └── README.md
 ```
 
@@ -67,13 +64,8 @@ Elle couvre notamment :
 * Analyse GPU
 * Hallucinations résiduelles
 
----
 
 ## Modèle publié
 
-🤗 **[Pirodax/loodo-mistral-7b-coach-v1](https://huggingface.co/Pirodax/loodo-mistral-7b-coach-v1)** sur HuggingFace Hub.
+🤗 **[Pirodax/loodo-mistral-7b-coach-fr](https://huggingface.co/Pirodax/loodo-mistral-7b-coach-fr)** sur HuggingFace Hub.
 
-```
-
-Je peux aussi te faire une **version encore plus stylée GitHub**, avec badges, section objectifs, limites et roadmap.
-```
